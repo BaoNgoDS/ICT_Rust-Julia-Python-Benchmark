@@ -1,0 +1,19 @@
+[package]
+name = "rust_entropy"
+version = "0.1.0"
+authors = ["Joao Henrique Machado Silva <joaoh82@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib] 
+name = "rust_entropy_lib"
+crate-type = ["dylib"]
+
+[dependencies]
+cpython = { version = "0.7.1", features = ["extension-module"] }
+
+[dependencies.pyo3]
+version = "0.21.2"
+features = ["auto-initialize"]
+
