@@ -32,9 +32,13 @@ Instructions for running the benchmark tests:
 2. **Rust**: Ensure that Rust is installed and run `python entropy_rust.py`
 3. **Julia**: Open the `Julia-Benchmark-Test.ipynb` in Jupyter Notebook and execute the cells.
 
-Benchmark Tests:
-```
+## Benchmark Tests
+
+To run the benchmark tests for the Python entropy calculation, use the pytest framework with the following command:
+
+```bash
 $ pytest --benchmark-min-rounds=120 --benchmark-histogram=histogram entropy.py
+
 
 ## Conclusion
 
