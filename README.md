@@ -32,6 +32,10 @@ Instructions for running the benchmark tests:
 2. **Rust**: Ensure that Rust is installed and run `python entropy_rust.py`
 3. **Julia**: Open the `Julia-Benchmark-Test.ipynb` in Jupyter Notebook and execute the cells.
 
+Benchmark Tests:
+```
+$ pytest --benchmark-min-rounds=120 --benchmark-histogram=histogram entropy.py
+
 ## Conclusion
 
 This repository provides insights into the computational efficiency and performance differences between Python, Rust, and Julia when performing identical tasks. The benchmarks suggest that while each language has its strengths, certain scenarios may benefit more from one language over the others.
